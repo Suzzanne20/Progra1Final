@@ -10,51 +10,43 @@ import javax.swing.JOptionPane;
  */
 public class SecTxt {
    public void m1(){
-    System.out.println("                       (≧◡≦)                     ");
-    System.out.println("___________________________________________________________");
+    System.out.println("                   (≧◡≦)                     ");
     System.out.println("     BIENVENIDO AL CHAPIN REGISTRO       ");
-    System.out.println("___________________________________________________________");
-    System.out.println(" Ingrese el # de opcion que desee ejecutar");
-    System.out.println(" ");
-    System.out.println("> ❶ - Iniciar Registro ");
-    System.out.println("> ❷ - Verificar Registros ");
-    System.out.println("> ❸ - Salir");
-    System.out.println("___________________________________________________________");
-} 
-public void m2(){
+    System.out.println("      ");
     System.out.println("___________________________________________");
-    System.out.println("       ☑ VERIFICACION DE REGISTROS ☑       ");
+    System.out.println("             ☑  REGISTROS  ☑              ");
     System.out.println("___________________________________________");
     System.out.println(" Ingrese el # de opcion que desee ejecutar ");
     System.out.println(" ");
-    System.out.println("> ❶ - Verificacion por medio de Listas ");
-    System.out.println("> ❷ - Verificacion por medio de Vectores ");
-    System.out.println("> ❸ - Volver ");
+    System.out.println("> ❶ - Registro por medio de Listas ");
+    System.out.println("> ❷ - Registro por medio de Vectores ");
     System.out.println("___________________________________________");
 } 
 
 public void mL(){
-    System.out.println("___________________________________________");
+    System.out.println("___________________________________________________________");
     System.out.println("                ★ LISTAS ★                ");
-    System.out.println("___________________________________________");
+    System.out.println("___________________________________________________________");
     System.out.println(" Ingrese el # de opcion que desee ejecutar ");
     System.out.println(" ");
-    System.out.println("> ❶ - Verificacion por medio de Listas ");
-    System.out.println("> ❷ - Verificacion por medio de Vectores ");
-    System.out.println("> ❸ - Volver ");
-    System.out.println("___________________________________________");
+    System.out.println("> ❶ - Historial de Registros ");
+    System.out.println("> ❷ - Busqueda por nombre ");
+    System.out.println("> ❸ - Vaciar el Historial ");
+    System.out.println("> ➍ - Salir ");
+    System.out.println("___________________________________________________________");
 }
 
 public void mV(){
-    System.out.println("___________________________________________");
+    System.out.println("___________________________________________________________");
     System.out.println("                ✦ VECTORES ✦              ");
-    System.out.println("___________________________________________");
+    System.out.println("___________________________________________________________");
     System.out.println(" Ingrese el # de opcion que desee ejecutar ");
     System.out.println(" ");
-    System.out.println("> ❶ - Verificacion por medio de Listas ");
-    System.out.println("> ❷ - Verificacion por medio de Vectores ");
-    System.out.println("> ❸ - Volver ");
-    System.out.println("___________________________________________");
+    System.out.println("> ❶ - Historial de Registros ");
+    System.out.println("> ❷ - Busqueda por nombre ");
+    System.out.println("> ❸ - Departamentos en registros pares ");
+    System.out.println("> ➍ - Salir ");
+    System.out.println("___________________________________________________________");
 }
 
 }

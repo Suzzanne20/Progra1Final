@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package thefinalsz;
-import java.util.ArrayList;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 /**
@@ -13,36 +12,60 @@ import javax.swing.JOptionPane;
 public class TheFinalSz {
 
     public static void main(String[] args) {
-        LiSz li1=new LiSz();
-        GuateSz vec=new GuateSz();
+        GuateSz gtLis=new GuateSz();
+        VecSz vec=new VecSz();
         SecTxt mns=new SecTxt();
+
         Scanner num=new Scanner(System.in);
-        JOptionPane.showMessageDialog(null, "          Iniciando Proceso....");
-        mns.m1();
-        int opc=num.nextInt();
+        JOptionPane.showMessageDialog(null, "          Iniciando Proceso...."); mns.m1();
+        int opc=num.nextInt(); boolean salir = false;
+        //START.........
         switch(opc){
         case 1:
-            li1.inDat();
+            gtLis.regList();
+            do{
+            mns.mL();
+            opc=num.nextInt();
+                switch(opc){
+                case 1:
+                  gtLis.lisVi(); break;
+                case 2:
+                  gtLis.listSe(); break;
+                case 3:
+                  gtLis.listCl(); break;
+                case 4:
+                salir=true;
+                break; }}while(!salir);
+
         break;
         case 2:
-            mns.m2();
-            int opc2=num.nextInt();
-            switch(opc2){
+            vec.inDat();
+            do{
+
+            mns.mV();
+            opc=num.nextInt();
+
+
+                switch(opc){
                 case 1:
-                mns.mL();
+                    vec.mostrarHistorial();
+
                 break;
+
                 case 2:
-                mns.mV();
                 break;
-                default:
-                JOptionPane.showMessageDialog(null, "       Opcion invalida");
-                break;}
-        case 3:
-        JOptionPane.showMessageDialog(null, ">>>   ⊝ Proceso Finalizado ⊝   <<<");
+                case 3:
+                break;
+                case 4:
+                salir=true;
+                break; }}while(!salir);
+
         break;
+
         default:
         JOptionPane.showMessageDialog(null, "       Opcion invalida");
         break;
         }
+        JOptionPane.showMessageDialog(null, ">>>   ⊝ Proceso Finalizado ⊝   <<<");
         JOptionPane.showMessageDialog(null, "          Profe Pongame 100!!\n                     ♥( ͡❛ ͜ʖ͡❛)✌");
 }}
