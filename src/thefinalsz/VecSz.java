@@ -1,12 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+/* Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template*/
 package thefinalsz;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
 
 /**
  * @author Suzzanne Acevedo Morales 
@@ -46,11 +43,7 @@ public void inDat (){
         System.out.println("___________________________________________________________");
         this.historial(depa,muni,cab);
         vecBus[i]=depa;   vecBusp[i]=muni;
-        
-        /*char vecBusc[] = new char[depa.length()];
-        for(i = 0; i < depa.length(); i++){
-            vecBusc[i] = depa.charAt(i);
-        }*/
+
 }}
 //Historial...................................
 protected void historial(String n1,int n2,String n3){
@@ -81,18 +74,17 @@ public void vecSe (){
     System.out.println("Ingrese el nombre del Departamento que desee buscar");
     suss = num.nextLine();
 
-    //System.out.println("\n Resultado de su busqueda: ");
     for(int i=0;i<vecBus.length;i++){
         if(vecBus[i] == null ? (suss) == null : vecBus[i].equals(suss)){
         pos=i;
         }
     }
-    if(pos==-1){System.out.println("Aun no ah sido registrado." + pos);
+    if(pos==-1){System.out.println("Aun no ah sido registrado." );
     }else{System.err.println("ya fue registrado, en la posicion: "+pos);}
 
     System.out.println("___________________________________________________________");
     }
-//vector de Busqueda por inicial............... A;DLFKJAS;LFJAS;FL
+//vector de Busqueda por inicial............... ok
 public void vecBl (){
     System.out.println("___________________________________________________________");
     System.out.println("★ BUSQUEDA");
@@ -104,13 +96,12 @@ public void vecBl (){
         }else{ }
     }
 
-
     System.out.println("___________________________________________________________");
     }
-//vector de pares...............
+//vector de pares............................ ok
 public void vecBp (){
     System.out.println("___________________________________________________________");
-    System.out.println("      ☑ REGISTROS PARES CON MUNICIPIOS MAYORES DE 4 ☑          "); //
+    System.out.println("      ☑ REGISTROS PARES MAYORES DE 4 ☑          "); //
     System.out.println("___________________________________________________________");
          for(int i=0; i<10;i++)
         {  

@@ -43,7 +43,7 @@ public void mV(){
     System.out.println("> ❶ - Historial de Registros ");
     System.out.println("> ❷ - Busqueda por nombre ");
     System.out.println("> ❸ - Busqueda por inicial ");
-    System.out.println("> ➍ - Departamentos en registros pares ");
+    System.out.println("> ➍ - Departamentos en registros pares\n          Con Municipios mayores de 4 ");
     System.out.println("> ➎ - Salir ");
     System.out.println("___________________________________________________________");
 }
