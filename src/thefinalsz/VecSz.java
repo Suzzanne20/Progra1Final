@@ -94,12 +94,16 @@ public void vecSe (){
     }
 //vector de Busqueda por inicial............... A;DLFKJAS;LFJAS;FL
 public void vecBl (){
-    int pos = -1;
     System.out.println("___________________________________________________________");
     System.out.println("★ BUSQUEDA");
-    System.out.println("Ingrese el nombre del Departamento que desee buscar");
+    System.out.println("Ingrese la inicial del Departamento que desee buscar");
     suss = num.nextLine();  
-    
+    for(int i=0;i<vecBus.length;i++){
+        if(vecBus[i] == null ? (suss) == null : vecBus[i].contains(suss)){
+        System.out.println("\nEl departamento que inicia con "+ suss+" es: "+vecBus[i]);
+        }else{ }
+    }
+
 
     System.out.println("___________________________________________________________");
     }
