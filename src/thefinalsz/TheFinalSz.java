@@ -33,10 +33,10 @@ public class TheFinalSz {
         case 2: vec.inDat();
             do{ mns.mV();   opc=num.nextInt();
                 switch(opc){
-                case 1: vec.mostrarHist(); break;
-                case 2: vec.vecSe();       break;
-                case 3: vec.vecBl();       break;
-                case 4: vec.vecBp();       break;
+                case 1: mns.mh();vec.vmos();break;
+                case 2: vec.vecSe();        break;
+                case 3: vec.vecBl();        break;
+                case 4: vec.vecBp();        break;
                 case 5: salir=true;
                 break; }}while(!salir);
         break;

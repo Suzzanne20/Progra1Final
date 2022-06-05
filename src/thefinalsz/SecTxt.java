@@ -1,9 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+/*Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template*/
 package thefinalsz;
-import javax.swing.JOptionPane;
+
 /**
  * @author Suzzanne Acevedo Morales 
  * 0909-21-10857
@@ -49,5 +47,9 @@ public void mV(){
     System.out.println("> ➎ - Salir ");
     System.out.println("___________________________________________________________");
 }
-
+public void mh(){
+    System.out.println("___________________________________________________________");
+    System.out.println("           ☑ HISTORIAL DE REGISTROS ☑          ");
+    System.out.println("___________________________________________________________");
+}
 }

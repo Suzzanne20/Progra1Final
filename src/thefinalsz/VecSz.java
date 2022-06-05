@@ -4,6 +4,7 @@
  */
 package thefinalsz;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -15,14 +16,16 @@ public class VecSz extends GuateSz{
     protected int cnt, cnth;
     protected String[] vecHist;
     protected String[] vecBus;
-    //protected char[] vecBusc; 
+    //protected char[] vecBusc;
+    protected int[] vecBusp; 
     String suss;
     String let;
 
     public VecSz(){
     vecHist=new String[50];//iniciar vector
-    vecBus=new String[10];//Vector Busqueda
+    vecBus=new String[6];//Vector Busqueda
     //vecBusc=new char[10];//Vector Letra inicial
+    vecBusp=new int[10];//Vector cnt muni
     this.cnth=0;  }  
 
     Scanner num=new Scanner(System.in);
@@ -42,12 +45,12 @@ public void inDat (){
         System.out.print(">> Cabecera Departamental: "); cab = num.nextLine();
         System.out.println("___________________________________________________________");
         this.historial(depa,muni,cab);
-        vecBus[i]=depa;
+        vecBus[i]=depa;   vecBusp[i]=muni;
         
-        char vecBusc[] = new char[depa.length()];
+        /*char vecBusc[] = new char[depa.length()];
         for(i = 0; i < depa.length(); i++){
             vecBusc[i] = depa.charAt(i);
-        }
+        }*/
 }}
 //Historial...................................
 protected void historial(String n1,int n2,String n3){
@@ -56,7 +59,7 @@ vecHist[cnth]="--> Departamento:  "+n1+"   tiene "+n2+" municipios   y su Cabece
 
 }
 
-protected void mostrarHist(){
+protected void vmos(){
 
 try{
     System.out.println(vecHist.length);
@@ -100,17 +103,25 @@ public void vecBl (){
 
     System.out.println("___________________________________________________________");
     }
-//vector de Busqueda por pares...............
+//vector de pares...............
 public void vecBp (){
-    int pos = -1;
     System.out.println("___________________________________________________________");
-    System.out.println("★ BUSQUEDA");
-    System.out.println("Ingrese el nombre del Departamento que desee buscar");
-    suss = num.nextLine();  
-    
+    System.out.println("      ☑ REGISTROS PARES CON MUNICIPIOS MAYORES DE 4 ☑          "); //
+    System.out.println("___________________________________________________________");
+         for(int i=0; i<10;i++)
+        {  
+            if(i%2==0) //VERIFICAMOS SI LA POCISION i ES PAR O NO.
+             if(vecBusp[i]>4){
+              System.out.println(vecBus[i]);   
+            }
+             
+            }
+        
 
-    System.out.println("___________________________________________________________");
+
     }
+        
+    
 
 
 }
