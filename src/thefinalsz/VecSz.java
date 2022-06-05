@@ -4,12 +4,8 @@
  */
 package thefinalsz;
 
-
-import java.lang.reflect.Array;
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.IntStream;
+
 
 /**
  * @author Suzzanne Acevedo Morales 
@@ -19,26 +15,15 @@ public class VecSz extends GuateSz{
     protected int cnt, cnth;
     protected String[] vecHist;
     protected String[] vecBus;
-    String suss, nDepa;
-
-
+    //protected char[] vecBusc; 
+    String suss;
+    String let;
 
     public VecSz(){
-    nDepa="";
     vecHist=new String[50];//iniciar vector
     vecBus=new String[10];//Vector Busqueda
-    this.cnth=0;  }
-    
-
-    public String getnDepa() {
-        return nDepa;
-    }
-
-    public void setnDepa(String n) {
-        this.nDepa = n;
-    }
-
-
+    //vecBusc=new char[10];//Vector Letra inicial
+    this.cnth=0;  }  
 
     Scanner num=new Scanner(System.in);
 
@@ -58,16 +43,20 @@ public void inDat (){
         System.out.println("___________________________________________________________");
         this.historial(depa,muni,cab);
         vecBus[i]=depa;
+        
+        char vecBusc[] = new char[depa.length()];
+        for(i = 0; i < depa.length(); i++){
+            vecBusc[i] = depa.charAt(i);
+        }
 }}
-
-//Historial................
+//Historial...................................
 protected void historial(String n1,int n2,String n3){
 cnth=cnth+1;
 vecHist[cnth]="--> Departamento:  "+n1+"   tiene "+n2+" municipios   y su Cabecera es: "+n3;
 
 }
 
-protected void mostrarHistorial(){
+protected void mostrarHist(){
 
 try{
     System.out.println(vecHist.length);
@@ -82,27 +71,6 @@ try{
 
     } 
 //Vector de Captura de Busqueda................
-protected void busqueda(String n1){
-cnth=cnth+1;
-vecBus[cnth]="--> Departamento:  "+n1;
-}
-
-protected void busView(){
-
-try{
-    System.out.println(vecBus.length);
-    for(int i=1; i<vecBus.length;i++){
-        if (!vecBus[i].isEmpty()){
-           System.out.println(vecBus[i]);
-        }       
-    }
-}catch(Exception e){
-    System.out.println(e.getMessage());
-        }
-
-    } 
-
-
 public void vecSe (){
     int pos = -1;
     System.out.println("___________________________________________________________");
@@ -121,7 +89,28 @@ public void vecSe (){
 
     System.out.println("___________________________________________________________");
     }
+//vector de Busqueda por inicial............... A;DLFKJAS;LFJAS;FL
+public void vecBl (){
+    int pos = -1;
+    System.out.println("___________________________________________________________");
+    System.out.println("★ BUSQUEDA");
+    System.out.println("Ingrese el nombre del Departamento que desee buscar");
+    suss = num.nextLine();  
+    
 
+    System.out.println("___________________________________________________________");
+    }
+//vector de Busqueda por pares...............
+public void vecBp (){
+    int pos = -1;
+    System.out.println("___________________________________________________________");
+    System.out.println("★ BUSQUEDA");
+    System.out.println("Ingrese el nombre del Departamento que desee buscar");
+    suss = num.nextLine();  
+    
+
+    System.out.println("___________________________________________________________");
+    }
 
 
 }
