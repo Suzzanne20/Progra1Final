@@ -21,39 +21,23 @@ public class TheFinalSz {
         int opc=num.nextInt(); boolean salir = false;
         //START.........
         switch(opc){
-        case 1:
-            gtLis.regList();
-            do{
-            mns.mL();
-            opc=num.nextInt();
+        case 1: gtLis.regList();
+            do{ mns.mL();   opc=num.nextInt();
                 switch(opc){
-                case 1:
-                  gtLis.lisVi(); break;
-                case 2:
-                  gtLis.listSe(); break;
-                case 3:
-                  gtLis.listCl(); break;
-                case 4:
-                salir=true;
+                case 1: gtLis.lisVi();  break;
+                case 2: gtLis.listSe(); break;
+                case 3: gtLis.listCl(); break;
+                case 4: salir=true;
                 break; }}while(!salir);
-
         break;
-        case 2:
-            vec.inDat();
-            do{
-            mns.mV();
-            opc=num.nextInt();
+        case 2: vec.inDat();
+            do{ mns.mV();   opc=num.nextInt();
                 switch(opc){
-                case 1:
-                    vec.mostrarHistorial(); break;
-                case 2:
-                break;
-                case 3:
-                break;
-                case 4:
-                salir=true;
+                case 1: vec.mostrarHistorial(); break;
+                case 2: vec.vecSe();            break;
+                case 3: break;
+                case 4: salir=true;
                 break; }}while(!salir);
-
         break;
 
         default:

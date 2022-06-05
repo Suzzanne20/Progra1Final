@@ -11,10 +11,10 @@ import java.util.Scanner;
 public class VecSz extends GuateSz{
     protected int cnt, cnth;
     protected String[] vecHist;
+    String suss;
+    public VecSz(){
 
-   public VecSz(){
-
-    vecHist=new String[100];//iniciar vector
+    vecHist=new String[50];//iniciar vector
     this.cnth=0;  }
 
     Scanner num=new Scanner(System.in);
@@ -58,6 +58,26 @@ try{
 
     } 
 
+public void vecSe (){
+    System.out.println("___________________________________________________________");
+    System.out.println("★ BUSQUEDA");
+    System.out.println("Ingrese el nombre del Departamento que desee buscar");
+    suss = num.nextLine();
+    System.out.println("\n Resultado de su busqueda: ");
+    int i=0;
+while(i<50){
+i++;
 
+}if (i==50){System.out.println("Aun no ah sido registrado.");
+}else{ if(vecHist[i]==suss){System.out.println("ya fue registrado, en la posicion: "+i);
+}else {System.out.println("Aun no ah sido registrado.");}
+
+
+    System.out.println("___________________________________________________________");
+    }
+
+
+
+}
 
 }
