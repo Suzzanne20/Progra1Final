@@ -41,17 +41,11 @@ public class TheFinalSz {
         case 2:
             vec.inDat();
             do{
-
             mns.mV();
             opc=num.nextInt();
-
-
                 switch(opc){
                 case 1:
-                    vec.mostrarHistorial();
-
-                break;
-
+                    vec.mostrarHistorial(); break;
                 case 2:
                 break;
                 case 3:
